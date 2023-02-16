@@ -17,9 +17,9 @@ import plotly.express as px
 import pandas as pd
 
 
-array_1 = [5,5,5,5,5.2]
-array_2 = [7,7,7,7,7.2]
-array_3 = [9,9,9,9,9.2]
+array_1 = [4,5,5,5,5.2]
+array_2 = [6,7,5,5,6.2]
+array_3 = [9,6.5,6,8,7]
 
 dimension=5
 num_persone=5
@@ -70,7 +70,7 @@ def gaussian(array_1,array_2,array_3,dimension):
 
     plt.legend()
 
-    ax.set_xlim([average_2-average_2/1.3,average_2+average_2/2])#it represents the x-axis range shown in the image
+    ax.set_xlim([average_2-average_2/1.7,average_2+average_2/1.1])#it represents the x-axis range shown in the image
     ax.set_yticklabels([])
  
     plt.savefig('normal_curve.png', dpi=7, bbox_inches='tight')
